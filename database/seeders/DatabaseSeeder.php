@@ -15,9 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
-        $this->call(Biodatastableseeder::class);
-        $this->call(PostsTableSeeder::class);
+        $this->call(PostsSeeder::class);
+        $this->call(MahasiswaTableSeeder::class);
+        $this->call(DosenTableSeeder::class);
+        $this->command->info("Sample Data Sudah Terisi");
     }
     }
 
